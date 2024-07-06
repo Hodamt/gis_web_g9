@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My WebGIS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+		
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/custom-styles.css" />
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="../index.html">My WebGIS - Page 2</a></h1>
+					<nav id="nav"> 
+						<ul>
+							<li class="current"><a href="../index.html">HOME</a></li>
+							<li class="current"><a href="page2.html">Page 2</a></li>
+							<li class="current"><a href="webgis.html">WebGIS</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+					
+					<header class="special container">
+						<span class="icon solid fa-globe"></span>
+						<h2>In this second page you can see the <strong>RESULTS</strong></h2>
+						
+					</header>
+				
+
+					<!-- One -->
+						<div class="wrapper style4 container">
+
+							<!-- Content -->
+								<div class="content">
+									<div>
+										
+										<header>
+											
+										</header>
+										<h2><strong>Results - Landslide Susceptibility Mapping</strong></h2>
+										<p>Below is the confusion matrix obtained after classifying the landslide susceptibility map using the random forest model:</p>
+								
+										<!-- Confusion Matrix Table -->
+										<table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+											<thead>
+												<tr>
+													<th>Thematic</th>
+													<th>1</th>
+													<th>2</th>
+													<th>UA</th>
+													<th>PA</th>
+													<th>OA</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>204</td>
+													<td>22</td>
+													<td>0.9</td>
+													<td>0.8</td>
+													<td rowspan="2">0.844311</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>20</td>
+													<td>219</td>
+													<td>0.92</td>
+													<td>0.89</td>
+												</tr>
+											</tbody>
+										</table>
+								
+										<!-- Description -->
+										<p>Class 1:
+											<br />Precision (UA) is 0.9, meaning 90% of the time when the model predicts Class 1, it is correct.
+											<br />Recall (PA) is 0.8, meaning the model correctly identifies 80% of actual Class 1 instances.
+										</p>
+										<p>Class 2:
+											<br />Precision (UA) is 0.92, meaning 92% of the time when the model predicts Class 2, it is correct.
+											<br />Recall (PA) is 0.89, meaning the model correctly identifies 89% of actual Class 2 instances.
+										</p>
+										<p>Overall Performance:
+											<br />The model has an overall accuracy (OA) of approximately 84.4%, which indicates that it correctly predicts the class of about 84.4% of all instances.
+										</p>
+										<p>Conclusion:
+											<br />Your random forest model performs well with an overall accuracy of 84.4%. It has high precision and recall for both classes, indicating that it is generally reliable in classifying landslide susceptibility. However, there are still some misclassifications (FP and FN) that you might want to reduce, possibly by further tuning the model, adding more data, or refining your feature set.
+										</p>
+								
+										<!-- Susceptibility Class Analysis -->
+										<h3>Analysis of Susceptibility Classes in Aprica, Lombardy, Italy</h3>
+								
+										<p><strong>Introduction:</strong><br>
+										The following analysis explores the distribution and characteristics of susceptibility classes across Aprica, a municipality in the Lombardy region of Italy. The dataset provides valuable insights into varying degrees of susceptibility, essential for understanding environmental planning and risk assessment in the area.</p>
+								
+										<p><strong>Summary Statistics:</strong><br>
+										The dataset encompasses 5 zones, covering a total area of approximately 60,089,229.19 square meters. It includes 4 susceptibility classes, each characterized by metrics such as mean susceptibility, maximum susceptibility observed, and minimum values detected within the study area.</p>
+								
+										<p><strong>Spatial Distribution:</strong><br>
+										Across Aprica, susceptibility classes exhibit distinct spatial patterns. For example:
+										<ul>
+											<li>Class 1 (low susceptibility) shows a wide distribution but tends to be concentrated in lower elevation areas.</li>
+											<li>Class 2 (moderate susceptibility) is more evenly distributed, covering both lower and mid-elevation areas.</li>
+											<li>Class 3 (high susceptibility) is typically found in steeper, less accessible regions.</li>
+											<li>Class 4 (very high susceptibility) is clustered in specific high-risk zones, often associated with steep slopes and potential landslide areas.</li>
+										</ul>
+										</p>
+								
+										<p><strong>Analysis of Classes:</strong>
+										<ul>
+											<li><strong>Class 1:</strong><br>
+												Observations: This class covers a significant portion of the study area with a mean susceptibility value of 0.9335.<br>
+												Trends: Low susceptibility is prevalent in urbanized and developed regions with stable terrain.<br>
+												Implications: Areas in Class 1 are considered low risk for natural hazards, making them suitable for further development and urban planning.
+											</li>
+											<li><strong>Class 2:</strong><br>
+												Observations: Encompasses moderate susceptibility with a mean value of 0.<br>
+												Trends: Distributed across diverse terrains, often in transitional zones between low and high-risk areas.<br>
+												Implications: Requires moderate attention for infrastructure development and disaster preparedness strategies.
+											</li>
+											<li><strong>Class 3:</strong><br>
+												Observations: Represents high susceptibility with an observed maximum value of 3.<br>
+												Trends: Found predominantly in steeper, more unstable regions, which could be prone to landslides or erosion.<br>
+												Implications: These areas need stringent land-use regulations and proactive mitigation measures to prevent potential hazards.
+											</li>
+											<li><strong>Class 4:</strong><br>
+												Observations: This class includes very high susceptibility zones with a maximum observed value of 46.<br>
+												Trends: Clusters in critical high-risk areas, often associated with significant geological activity.<br>
+												Implications: These zones are crucial for disaster management and emergency planning. Development in these areas should be highly regulated or avoided.
+											</li>
+										</ul>
+										</p>
+								
+										<p><strong>Implications:</strong><br>
+										Understanding susceptibility classes is crucial for urban planning and disaster management in Aprica. The findings highlight areas of heightened risk and potential strategies for mitigation and adaptation. This can guide policymakers and planners in prioritizing efforts and allocating resources effectively.</p>
+								
+										<p><strong>Visualization:</strong><br>
+										A map showing the spatial distribution of susceptibility classes in Aprica is essential. It should include a clear legend and labels to indicate the different susceptibility classes and their respective areas. The map can help visualize high-risk zones and guide decision-making processes.</p>
+								
+										<p><strong>Conclusion:</strong><br>
+										The analysis underscores the importance of considering susceptibility classes in Aprica. By leveraging spatial data and statistical insights, stakeholders can make informed decisions to enhance resilience, optimize resource allocation, and improve disaster preparedness.</p>
+								
+										<p><strong>Recommendations:</strong><br>
+										Based on these findings, it is recommended to:
+										<ul>
+											<li>Conduct detailed vulnerability assessments in high and very high susceptibility zones.</li>
+											<li>Implement land-use regulations and construction guidelines in moderate to high-risk areas.</li>
+											<li>Develop and maintain disaster preparedness and emergency response plans tailored to high-risk zones.</li>
+											<li>Promote community awareness and education programs focused on risk mitigation and disaster resilience.</li>
+										</ul>
+										</p>
+								
+										<!-- Susceptibility Class Count Table -->
+										<h3>Population Counts in Each Susceptibility Class (pop_class_count)</h3>
+										<table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+											<thead>
+												<tr>
+													<th>Zone</th>
+													<th>Area (m²)</th>
+													<th>Sum</th>
+													<th>Count</th>
+													<th>Min</th>
+													<th>Max</th>
+													<th>Mean</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>10,511,535.85</td>
+													<td>1,471.2702</td>
+													<td>1,576</td>
+													<td>0</td>
+													<td>46</td>
+													<td>0.9335</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>160,074.15</td>
+													<td>0</td>
+													<td>24</td>
+													<td>0</td>
+													<td>0</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>46,688.29</td>
+													<td>0.0024</td>
+													<td>7</td>
+													<td>0</td>
+													<td>0.0024</td>
+													<td>0.0003</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>380,176.11</td>
+													<td>3.0016</td>
+													<td>57</td>
+													<td>0</td>
+													<td>3</td>
+													<td>0.0527</td>
+												</tr>
+												<tr>
+													<td>100</td>
+													<td>49,122,754.79</td>
+													<td>83.4777</td>
+													<td>7,365</td>
+													<td>0</td>
+													<td>19.4420</td>
+													<td>0.0113</td>
+												</tr>
+											</tbody>
+										</table>
+								
+										<!-- Population Susceptibility Pie Chart -->
+										<h3>Population Susceptibility Pie Chart</h3>
+										<p>The pie chart below shows the percentage of population in each susceptibility class:</p>
+										<img src="../images/population_susceptibility_pie_chart.png.jpg" alt="Population Susceptibility Pie Chart" style="width: 100%; max-width: 600px;">
+									</header>
+								</article>
+							</section>
+									</div>
+								</div>
+
+						</div>
+
+					
+
+								
+								
+							
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="copyright">
+						<li>&copy; My WebGIS</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.dropotron.min.js"></script>
+			<script src="/js/jquery.scrolly.min.js"></script>
+			<script src="/js/jquery.scrollex.min.js"></script>
+			<script src="/js/browser.min.js"></script>
+			<script src="/js/breakpoints.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>
